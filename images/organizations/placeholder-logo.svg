@@ -1,0 +1,7 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- PLACEHOLDER ORGANIZATION LOGO — used by the example entry in
+       js/main.js. When you add a real organization, drop their exported
+       logo image into this folder and point to it instead of this file. -->
+  <rect width="100" height="100" rx="12" fill="#161616" stroke="#A8A8A8" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="50" y="55" font-family="Arial, sans-serif" font-size="13" fill="#A8A8A8" text-anchor="middle">LOGO</text>
+</svg>

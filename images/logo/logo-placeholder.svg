@@ -1,0 +1,8 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- PLACEHOLDER LOGO — replace this whole file with your real logo.
+       Export your logo from Canva as an SVG or PNG, name it whatever
+       you like, and update the file path in the header/footer of each
+       HTML page (search for "logo-placeholder"). -->
+  <rect width="100" height="100" rx="12" fill="#2B2A6B"/>
+  <text x="50" y="58" font-family="Arial, sans-serif" font-size="16" fill="#FFFFFF" text-anchor="middle">LOGO</text>
+</svg>

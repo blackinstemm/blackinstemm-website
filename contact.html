@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlackInSTEMM — Contact</title>
+  <meta name="description" content="Get in touch with the BlackInSTEMM collective network.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SHARED HEADER / NAVIGATION — identical on every page. If you add a
+       page or rename a nav link, update this block everywhere. See README.md.
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo/logo-placeholder.svg" alt="BlackInSTEMM logo">
+        <span>BlackInSTEMM</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="organizations.html">Organizations</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+
+  <!-- ==========================================================================
+       PAGE HEADER
+       ========================================================================== -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>[REPLACE ME: One sentence inviting visitors to reach out — e.g. about joining, partnering, or asking questions.]</p>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       CONTACT INFO + FORM
+       ========================================================================== -->
+  <section>
+    <div class="container contact-layout">
+
+      <!-- Left column: general contact info + social links -->
+      <div class="contact-info">
+        <h3>Email</h3>
+        <p><a href="mailto:REPLACE-ME@example.org">REPLACE-ME@example.org</a></p>
+
+        <h3>Follow Us</h3>
+        <div class="footer-social">
+          <!-- REPLACE ME: swap "#" for your real social links -->
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter/X</a>
+        </div>
+
+        <h3>Prefer Email?</h3>
+        <p>
+          You can also reach us directly at
+          <a href="mailto:REPLACE-ME@example.org">REPLACE-ME@example.org</a>
+          instead of using the form.
+        </p>
+      </div>
+
+      <!-- Right column: contact form.
+
+           IMPORTANT — this form has no backend of its own (this is a plain
+           static site), so it needs a free form service to actually deliver
+           submissions to your inbox. To wire it up:
+
+             1. Go to https://formspree.io and create a free account.
+             2. Create a new form there — it will give you a unique URL
+                that looks like "https://formspree.io/f/abcd1234".
+             3. Replace the REPLACE-ME-FORM-ID in the form's "action"
+                attribute below with that URL.
+
+           Until you do that, submitting this form will show a Formspree
+           error page instead of sending anything — swap in your real
+           email above and use that until this is wired up, or delete the
+           <form> element below entirely and keep only the contact info. -->
+      <form class="contact-form" action="https://formspree.io/f/REPLACE-ME-FORM-ID" method="POST">
+
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" name="subject" required>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-note">This form requires a Formspree ID to be connected before it will send — see the comment in contact.html.</p>
+
+      </form>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SHARED FOOTER — identical on every page.
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <div class="footer-column">
+        <h4>BlackInSTEMM</h4>
+        <p>[REPLACE ME: one-line description or tagline for the footer.]</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="organizations.html">Organizations</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:REPLACE-ME@example.org">REPLACE-ME@example.org</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter/X</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 BlackInSTEMM. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
