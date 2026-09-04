@@ -1,10 +1,40 @@
 # BlackInSTEMM Website
 
-A plain HTML/CSS/JS website for the BlackInSTEMM collective network. No build
-tools, no frameworks — just files you can open, edit, and re-upload.
+This repository is for the BlackInSTEMM website. To build it, we used Claude to put together a plain HTML/CSS/JS website for the BlackInSTEMM collective network. No build tools, no frameworks — just files you can open, edit, and re-upload. Each section below outlines how to make adjustments to the website.
 
-5 pages: Home (`index.html`), About (`about.html`), Organizations
-(`organizations.html`), Events (`events.html`), and Contact (`contact.html`).
+## General Website Description
+The website is compirsed of 5 pages. Each page has a corresponding html file that can be edited to make changes. The pages and their corresponding `.html` files are as follows: 
+  - Home (`index.html`)
+  - About (`about.html`)
+  - Organizations
+(`organizations.html`)
+  - Events (`events.html`)
+  - Contact (`contact.html`)
+
+## How to add a new organization
+
+Open [js/main.js](js/main.js) and find the `organizations` list near the top
+(Section 2). Copy the example entry — the whole block from `{` to `},` — paste
+it as a new entry in the list, and fill in the values:
+
+```js
+{
+  name: "Acme STEM Society",
+  logo: "images/organizations/acme-logo.png",
+  description: "A short description of the organization.",
+  website: "https://acmestem.org",
+  socialLinks: [
+    { platform: "Instagram", url: "https://instagram.com/acmestem" },
+    { platform: "LinkedIn", url: "https://linkedin.com/company/acmestem" }
+  ]
+}
+```
+
+- `logo` should point to a file you've dropped into `images/organizations/`.
+- `socialLinks` can have as many entries as the organization has — or be an
+  empty list (`socialLinks: []`) if they have none.
+- Save the file and refresh the page — no other steps needed. New
+  organizations appear automatically on `organizations.html`.
 
 ## Previewing the site on your computer
 
@@ -58,30 +88,6 @@ tags that control layout/structure, not visible text.
 The Organizations and Events page text is the exception — see the next
 section, that content lives in `js/main.js` instead of the `.html` files.
 
-## How to add a new organization
-
-Open [js/main.js](js/main.js) and find the `organizations` list near the top
-(Section 2). Copy the example entry — the whole block from `{` to `},` — paste
-it as a new entry in the list, and fill in the values:
-
-```js
-{
-  name: "Acme STEM Society",
-  logo: "images/organizations/acme-logo.png",
-  description: "A short description of the organization.",
-  website: "https://acmestem.org",
-  socialLinks: [
-    { platform: "Instagram", url: "https://instagram.com/acmestem" },
-    { platform: "LinkedIn", url: "https://linkedin.com/company/acmestem" }
-  ]
-}
-```
-
-- `logo` should point to a file you've dropped into `images/organizations/`.
-- `socialLinks` can have as many entries as the organization has — or be an
-  empty list (`socialLinks: []`) if they have none.
-- Save the file and refresh the page — no other steps needed. New
-  organizations appear automatically on `organizations.html`.
 
 ## How to add a new event
 
