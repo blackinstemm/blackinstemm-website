@@ -1,0 +1,7 @@
+# Content-planning Word docs — collaborative drafts, not site source.
+# Kept local; text gets copied into the HTML/js/main.js by hand once finalized.
+*.docx
+~$*
+
+# macOS
+.DS_Store
